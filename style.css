@@ -1,0 +1,315 @@
+/* WebSite Name: Airbnb Experience page
+   Made by: Ritesh Gorle 
+   Created: Oct 2022
+   Content: various
+*/
+
+/*****************************************
+Table Of Contents:
+
+00. HIDE AND SHOW
+
+SECTION 01: LOGO AND NAV START
+SECTION 02: CAROUSEL 01
+SECTION 03: CAROUSEL 02
+SECTION 04: FOOTER START
+
+******************************************/
+
+
+
+/***********************************/
+/*      00. HIDE AND SHOW          */
+/***********************************/
+
+@media screen and (min-width: 0px) and (max-width: 600px) {
+  #my-content { display: none; }  /* hide it elsewhere */
+
+  #why-content { display: block; }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+  #my-content { display:block; }  /* show it on big screens */
+   
+   #why-content { display: none; }
+}
+
+
+
+
+/***********************************/
+/*          01. LOGO AND NAV       */
+/***********************************/
+.navbar{
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+.links{
+	margin-left: 690px;
+}
+
+#user {
+	box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 4px ;
+	padding-bottom: 4px ;
+	border-radius: 20px;
+}
+
+
+.dropbtn {
+  
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.show {display: block;}
+
+
+.hide{
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+
+/***********************************/
+/*          SECTION 02             */
+/***********************************/
+  .carousel-inner img {
+    width: 700px;
+    height: 320px;
+    border-radius: 20px;
+  }
+
+
+.ico{
+	left: 80%;
+}
+
+
+.carousel-control-next-icon,.carousel-control-prev-icon {
+  background-color: #04AA6D;
+  color: white;
+  padding: 18px 20px;
+  font-size: 14px;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+#sec2{
+	border-radius: 30px;
+	box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+}
+
+
+/************** Media Queries**************/
+
+@media only screen and (max-width: 600px) {
+ 
+.carousel-inner img {
+    width: 300px;
+    height: 260px;
+  }
+.ico{
+	left: 0%;
+}
+
+}
+
+
+
+/***********************************/
+/*          SECTION 03             */
+/***********************************/
+
+#container {
+  height: 70vh;
+  margin: 0;
+  padding: 0;
+  
+  display: grid ;
+  place-items: center
+}
+
+#carousel-container {
+  height: 500px;
+  width: 85vw;
+  max-width: 1400px;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+#buttons{
+	margin-left: 500px;
+}
+
+
+
+#carousel-container #rotate {
+  display: flex;
+  width: 1000%;
+  height: 100%; 
+  transition: all .5s;
+}
+
+#carousel-container #rotate .move {
+  height: 100%;
+  margin: auto 10px;
+  display: grid;
+  place-items: center;
+}
+
+
+#carousel-container #rotate .move  img {
+  border-radius: 20px;
+}
+
+
+/************** Media Queries**************/
+
+@media only screen and (min-width: 1100px) {
+
+  #carousel-container #rotate .move {
+    width: calc(2.5% - 20px);
+  }
+
+}
+
+@media only screen and (max-width: 1100px) {
+
+  #carousel-container #rotate .move {
+    width: calc(3.3333333% - 20px);
+  }
+
+}
+
+@media only screen and (max-width: 900px) {
+
+  #carousel-container #rotate .move {
+    width: calc(5% - 20px);
+  }
+
+}
+
+@media only screen and (max-width: 550px) {
+
+  #carousel-container #rotate .move {
+    width: calc(10% - 20px);
+  }
+
+  #buttons{
+	margin-left: 50px;
+}
+}
+
+
+
+/***********************************/
+/*    SECTION 04: FOOTER START     */
+/***********************************/
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+.foot{
+	background: #f5f5f0;
+
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul{
+	list-style: none;
+}
+
+.FOOTER{
+    padding: 70px 0;
+}
+.FOOTER-column{
+   width: 25%;
+   padding: 0 15px;
+}
+.FOOTER-column h4{
+	font-size: 18px;
+	color: black;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.FOOTER-column ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.FOOTER-column ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: black;
+	text-decoration: none;
+	font-weight: 300;
+	
+	display: block;
+	transition: all 0.3s ease;
+}
+
+.policy a {
+	text-decoration: none;
+	color: black;
+}
+
+.social-links a{
+	padding: 5px;
+	font-size: 20px;
+	color: black;
+}
+
+
+
+
+/************** Media Queries**************/
+
+@media(max-width: 767px){
+  .FOOTER-column{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .FOOTER-column{
+    width: 100%;
+}
+}
+
